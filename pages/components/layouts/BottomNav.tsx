@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import useCart from '@/app/(store)/store'
+import useCart from '../(store)/store'
 import { FaPercent, FaHome } from 'react-icons/fa'
 import { HiOutlineShoppingCart } from 'react-icons/hi'
 

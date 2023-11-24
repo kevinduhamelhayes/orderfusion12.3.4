@@ -15,7 +15,7 @@ const Sidebar = () => {
     <nav className="fixed flex h-full w-[12%] flex-col items-center bg-black pt-8">
       <figure className="rounded-full bg-white p-2">
         <Image
-          src={Logo}
+          src="/logo.png"
           height={40}
           width={40}
           alt="client logo"

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import useModal from '@/hooks/useModal'
+import useModal from '../../hooks/useModal'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { CgProfile } from 'react-icons/cg'
 

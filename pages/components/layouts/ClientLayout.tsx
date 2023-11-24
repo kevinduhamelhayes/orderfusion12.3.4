@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import useModal from '@/hooks/useModal'
-import Logo from '@/logo.png'
+import useModal from '../../hooks/useModal'
+import Logo from '../../../public/logo.png'
 import Navbar from './Navbar'
 import BottomNav from './BottomNav'
 import ModalCart from '../home/ModalCart'

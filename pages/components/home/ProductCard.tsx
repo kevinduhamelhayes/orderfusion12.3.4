@@ -3,7 +3,7 @@
 'use client'
 
 import Image from 'next/image'
-import useCart from '@/app/(store)/store'
+import useCart from '../(store)/store'
 import { IoMdAdd } from 'react-icons/io'
 
 export default function ProductCard({ product }) {

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { useProductContext } from '@/context/ProductContext'
+import { useProductContext } from '../context/ProductContext'
 import Searcher from './Searcher'
 import ProductCard from './ProductCard'
 
