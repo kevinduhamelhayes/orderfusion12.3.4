@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-async-client-component */
 
-import ProductList from '../components/home/ProductList'
-import ClientLayout from '../components/layouts/ClientLayout'
+import { useEffect, useState } from 'react'
+import ProductList from '@/components/home/ProductList'
+import ClientLayout from '@/components/layouts/ClientLayout'
+import { useRouter } from 'next/router'
 
 const getProduct = async () => {
   const response = await fetch('https://api.escuelajs.co/api/v1/products')
@@ -9,9 +11,16 @@ const getProduct = async () => {
   return response.json()
 }
 
-export default async function Home({ params }) {
-  const products = await getProduct()
-  const { id } = params
+export default async function Home() {
+  const [products, setProducts] = useState([])
+  const router = useRouter()
+  const { id } = router.query
+
+  useEffect(() => {
+    getProduct()
+      .then((data) => setProducts(data))
+      .catch((error) => console.log(error.message))
+  }, [])
 
   if (!products) return <h1>Cargando...</h1>
   return (

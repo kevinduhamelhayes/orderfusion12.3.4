@@ -2,7 +2,7 @@
 
 import React from 'react'
 import useModal from '../../hooks/useModal'
-import Logo from '../../../public/logo.png'
+import Logo from '../../public/logo.png'
 import Navbar from './Navbar'
 import BottomNav from './BottomNav'
 import ModalCart from '../home/ModalCart'
