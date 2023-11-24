@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Logo from '@/logo.png'
+import Logo from '../public/logo.png'
 
 const page = () => (
   <main className="flex h-screen w-full flex-col items-center justify-center bg-[#0d1117]">

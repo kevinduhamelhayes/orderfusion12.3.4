@@ -1,5 +1,5 @@
 /* eslint-disable linebreak-style */
-import useCart from '@/app/(store)/store'
+import useCart from '../(store)/store'
 import React from 'react'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import ModalCardProduct from './ModalCardProduct'

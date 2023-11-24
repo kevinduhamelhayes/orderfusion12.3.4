@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-async-client-component */
 
-import ProductList from '@/components/home/ProductList'
-import ClientLayout from '@/components/layouts/ClientLayout'
+import ProductList from '../components/home/ProductList'
+import ClientLayout from '../components/layouts/ClientLayout'
 
 const getProduct = async () => {
   const response = await fetch('https://api.escuelajs.co/api/v1/products')
