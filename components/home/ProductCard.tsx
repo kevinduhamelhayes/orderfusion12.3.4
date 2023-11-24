@@ -1,8 +1,4 @@
 /* eslint-disable max-len */
-
-'use client'
-
-import Image from 'next/image'
 import useCart from '../(store)/store'
 import { IoMdAdd } from 'react-icons/io'
 
@@ -15,9 +11,9 @@ export default function ProductCard({ product }) {
     >
       <div className="flex w-full items-center justify-between">
         <figure className="mr-4 aspect-auto w-[120px] min-w-[90px]">
-          <Image
+          <img
+            src={product.images}
             alt="imagen de producto"
-            src={product.images[1]}
             height={120}
             width={120}
             className="w-[120px] rounded-l-2xl"
@@ -33,7 +29,6 @@ export default function ProductCard({ product }) {
                 {product.price}
               </p>
             </div>
-
             <button
               type="button"
               className=" mr-4 flex items-center gap-2 rounded-lg border-2 border-green-400 px-4 py-3 font-bold text-green-400 transition-colors duration-150 sm:hover:bg-green-400 sm:hover:text-white"

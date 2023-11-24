@@ -21,16 +21,18 @@ const Sidebar = () => {
           alt="client logo"
         />
       </figure>
-      <h3 className="mb-4 mt-2 text-2xl font-medium text-white">Order Fusion</h3>
+      <h3 className="mb-4 mt-2 text-2xl font-medium text-white ">Order Fusion</h3>
       {links.map((link, index) => (
         <Link
           href={link.href}
           key={link.name}
-          className={`flex w-full flex-col items-center gap-2 border-t border-white py-2 text-center text-xl font-medium text-white ${
-            index === links.length - 1 && 'border-b'
-          }`}
+         
         >
+          <button className={`flex w-full flex-col items-center gap-5  border-t border-white py-2 text-center text-xl font-medium text-white ${
+            index === links.length - 1 ? 'border-b' : ''
+          }`}>
           {link.name}
+</button>
         </Link>
       ))}
     </nav>

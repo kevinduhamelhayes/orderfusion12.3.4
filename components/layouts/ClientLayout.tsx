@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import useModal from '../../hooks/useModal'
 import Logo from '../../public/logo.png'

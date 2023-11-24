@@ -15,7 +15,7 @@ const page = () => (
 
     <h3 className="my-2 text-2xl font-semibold text-white">Bienvenido a Order Fusion</h3>
     <p className="w-[40%] text-center text-xl text-white">
-      Estaremos encantados de tomar tu orden, por favor escanea el codigo QR de alguna mesa para continuar con tu pedido :)
+      Estaremos encantados de tomar tu orden, por favor escanea el codigo QR de alguna mesa para continuar con tu pedido
     </p>
   </main>
 )

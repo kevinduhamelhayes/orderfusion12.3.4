@@ -11,7 +11,7 @@ const getProduct = async () => {
   return response.json()
 }
 
-export default async function Home() {
+export default function Home() {
   const [products, setProducts] = useState([])
   const router = useRouter()
   const { id } = router.query

@@ -1,4 +1,4 @@
-'use client'
+
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -35,8 +35,8 @@ export default function Navbar({ client }) {
           <Link href="/admin/products" className="flex w-full items-center px-4 py-2">
             <button type="button" aria-label="Admin" className="bg-primary-yellow mr-4 flex h-12 w-12 items-center justify-center rounded-full">
               <CgProfile size={40} color="orange" />
+              <span className="text-lg font-medium">Admin</span>
             </button>
-            <span className="text-lg font-medium">Admin</span>
           </Link>
         </div>
       </nav>
